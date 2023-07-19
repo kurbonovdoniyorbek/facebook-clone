@@ -1,0 +1,228 @@
+.friends_page {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 310px auto;
+}
+
+.friends_page_container {
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    gap: 10px;
+    box-shadow: 0px 0px 20px #dbdbdb;
+    position: sticky;
+    top: 60px;
+    left: 0;
+}
+
+.friends_page_recomendation {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    padding: 20px;
+    background-color: var(--fds-comment-background);
+}
+
+.friends_page_container_text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 7px;
+    justify-content: space-between;
+}
+
+.friends_page_container_text p {
+    font-size: 20px;
+    font-weight: 410;
+}
+
+.friends_page_container_text_svg {
+    width: 33px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--fds-black-alpha-10);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.friends_page_container_item {
+    width: 100%;
+    padding: 7px 7px;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    background-color: transparent;
+    gap: 15px;
+    font-size: 17px;
+}
+
+.friends_page_container_item:hover {
+    background-color: var(--fds-gray-10);
+    cursor: pointer;
+}
+
+.friends_page_rec_text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.friends_page_rec_text h5 {
+    font-size: 20px;
+    font-weight: 450;
+}
+
+.friends_page_rec_text p {
+    padding: 7px 10px;
+    color: var(--fds-blue-60);
+    border-radius: 7px;
+}
+
+.friends_page_rec_text p:hover {
+    background-color: var(--fds-gray-10);
+    cursor: pointer;
+}
+
+.friends_page_rec_container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.friends_page_rec_container_item {
+    width: 225px;
+    height: 350px;
+    background-color: transparent;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0px 0px 20px #dbdbdb;
+    margin: auto;
+}
+
+.friends_page_rec_container_img {
+    width: 100%;
+    height: 225px;
+    background-color: transparent;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.friends_page_rec_container_img img {
+    width: 100%;
+    border-radius: inherit;
+}
+
+.friends_page_rec_container_item_name {
+    padding: 0px 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.friends_page_rec_container_item_btn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.friends_page_rec_container_item_btn button {
+    width: 88%;
+    padding: 9px 0px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 410;
+    font-size: 15px;
+    background-color: var(--fds-black-alpha-10);
+}
+
+.friends_page_rec_container_item_btn button:first-child {
+    color: var(--fds-blue-60);
+    background: var(--fds-blue-10);
+}
+
+@media screen and (max-width:1500px) {
+    .friends_page_rec_container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media screen and (max-width:1280px) {
+    .friends_page_rec_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:1040px) {
+    .friends_page_rec_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:850px) {
+    /* .friends_page_rec_container {
+        grid-template-columns: repeat(2, 1fr);
+    } */
+
+    .friends_page {
+        grid-template-columns: 60px auto;
+    }
+
+    .friends_page_container_item p {
+        display: none;
+    }
+
+    .friends_page_container_text_svg {
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;
+        background-color: transparent;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .friends_page_container_text {
+        display: none;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .friends_page_rec_container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .friends_page_rec_text h5 {
+        font-size: 13px;
+    }
+
+    .friends_page_container_text_svg svg {
+        padding: 3px;
+    }
+
+
+}

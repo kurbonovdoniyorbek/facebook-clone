@@ -1,0 +1,739 @@
+nav {
+    width: 100%;
+    height: 60px;
+    box-shadow: 0px 0px 20px #dbdbdb;
+    padding: 0px 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar-logo-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.navbar-logo-image svg {
+    width: 100%;
+    height: 100%;
+    color: var(--fds-highlight);
+}
+
+.navbar-logo_search {
+    background-color: var(--fds-black-alpha-05);
+    width: 240px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    gap: 10;
+}
+
+.navbar-logo_search svg {
+    padding: 5px;
+    font-size: 30px;
+    color: var(--fds-black-alpha-50);
+}
+
+.navbar-logo_search input {
+    height: 38px;
+    flex: 1;
+    border: none;
+    outline: none;
+    border-radius: 13px;
+    text-indent: 10px;
+    font-size: 15px;
+    background-color: transparent;
+    font-weight: 400;
+}
+
+.navbar-container {
+    width: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-container-item {
+    width: 19%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar-container-item a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s background;
+    color: var(--fds-black-alpha-30);
+}
+
+.navbar-container-item svg {
+    font-size: 25px;
+}
+
+.navbar-container-item:hover {
+    background-color: var(--fds-black-alpha-05);
+    transition: all .3s ease;
+}
+
+.navbar-container-item a.active_navbar {
+    height: 110%;
+    box-shadow: inset 0 -4px 0 0 var(--fds-highlight);
+    color: var(--fds-highlight);
+}
+
+.navbar-container-item:first-child:hover::after {
+    content: "Home";
+    position: absolute;
+    top: 60px;
+    background-color: var(--fds-black-alpha-60);
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 7px;
+    font-size: 14px;
+    transition: .5s;
+}
+
+.navbar-container-item:nth-child(2):hover::after {
+    content: "Friends";
+    position: absolute;
+    top: 60px;
+    background-color: var(--fds-black-alpha-60);
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 7px;
+    font-size: 14px;
+    transition: .5s;
+}
+
+.navbar-container-item:nth-child(3):hover::after {
+    content: "Watch";
+    position: absolute;
+    top: 60px;
+    background-color: var(--fds-black-alpha-60);
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 7px;
+    font-size: 14px;
+    transition: .5s;
+}
+
+.navbar-container-item:nth-child(4):hover::after {
+    content: "Marketplace";
+    position: absolute;
+    top: 60px;
+    background-color: var(--fds-black-alpha-60);
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 7px;
+    font-size: 14px;
+    transition: .5s;
+}
+
+.navbar-container-item:nth-child(5):hover::after {
+    content: "Gaming";
+    position: absolute;
+    top: 60px;
+    background-color: var(--fds-black-alpha-60);
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 7px;
+    font-size: 14px;
+    transition: .5s;
+}
+
+
+.navbar-container-item:last-child:hover::after {
+    content: "More";
+    position: absolute;
+    top: 60px;
+    right: 24px;
+    background-color: var(--fds-black-alpha-60);
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 7px;
+    transition: .5s;
+}
+
+.navbar_container_item_menu,
+.navbar_profile_item_plus {
+    display: none;
+}
+
+.navbar-profile-part {
+    width: 185px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-profile-items {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fds-black-alpha-05);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.navbar-profile-items:first-child:hover:after {
+    content: "Menu";
+    position: absolute;
+    top: 55px;
+    background-color: var(--fds-black-alpha-60);
+    color: #fff;
+    padding: 7px 7px;
+    border-radius: 7px;
+    transition: .5s;
+    font-size: 11px;
+}
+
+
+
+.navbar-profile-items:nth-child(2):hover::after {
+    content: "Messenger";
+    position: absolute;
+    top: 55px;
+    background-color: var(--fds-black-alpha-60);
+    color: #fff;
+    padding: 7px 7px;
+    border-radius: 7px;
+    transition: .5s;
+    font-size: 11px;
+}
+
+.navbar-profile-items:nth-child(3):hover::after {
+    content: "Notification";
+    position: absolute;
+    top: 55px;
+    background-color: var(--fds-black-alpha-60);
+    color: #fff;
+    padding: 7px 7px;
+    border-radius: 7px;
+    transition: .5s;
+    font-size: 11px;
+}
+
+.navbar-profile-items:last-child:hover::after {
+    content: "Account";
+    position: absolute;
+    top: 55px;
+    background-color: var(--fds-black-alpha-60);
+    color: #fff;
+    padding: 7px 7px;
+    border-radius: 7px;
+    transition: .5s;
+    font-size: 11px;
+}
+
+.navbar-profile-items:hover {
+    background-color: var(--fds-black-alpha-10);
+}
+
+.navbar-profile-items>img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.navbar-profile-items svg {
+    font-size: 24px;
+}
+
+.navbar-profile-items.active_profile {
+    background-color: var(--fds-blue-05);
+    color: var(--fds-blue-60);
+}
+
+.navbar-container-item:last-child {
+    display: none;
+}
+
+@media screen and (max-width:1250px) {
+    .navbar-logo_search input {
+        display: none;
+    }
+
+    .navbar-logo_search {
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+
+    .navbar_container_item-games,
+    .navbar_profile_item_menu {
+        display: none;
+    }
+
+    .navbar_container_item_menu,
+    .navbar_profile_item_plus {
+        display: block;
+    }
+
+    .navbar-container-item:nth-child(5) {
+        display: none;
+    }
+
+    .navbar-container-item:last-child {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+    .navbar {
+        justify-content: start;
+    }
+
+    .navbar-logo {
+        width: 110px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+
+    .navbar-container {
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 1;
+    }
+
+    .navbar-container-item {
+        display: none;
+    }
+
+
+    .navbar-container-item:last-child {
+        width: 40px;
+        height: 40px;
+        display: flex;
+    }
+
+    .navbar-container-item:last-child:hover::after {
+        content: "More";
+        position: absolute;
+        top: 50px;
+        right: -7px;
+        background-color: var(--fds-black-alpha-60);
+        color: #fff;
+        padding: 7px 10px;
+        border-radius: 7px;
+        transition: .5s;
+    }
+}
+
+.messenger {
+    width: 350px;
+    height: 380px;
+    padding: 10px;
+    position: fixed;
+    top: 55px;
+    display: flex;
+    flex-direction: column;
+    right: 10px;
+    background-color: #fff;
+    border-radius: 13px;
+    box-shadow: 0px 0px 10px var(--fds-black-alpha-10);
+    gap: 5px;
+    z-index: 999;
+}
+
+.messenger_head_txt {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.messenger_head_icons {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.messenger_head_icons li {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--fds-black-alpha-60);
+}
+
+.messenger_head_icons li:nth-child(2) {
+    font-size: 15px;
+}
+
+.messenger_head_icons li:hover {
+    background-color: var(--fds-black-alpha-10);
+}
+
+.messenger_container {
+    width: 100%;
+    height: 220px;
+    background-color: transparent;
+    overflow: scroll;
+}
+
+.messenger_container::-webkit-scrollbar {
+    display: none;
+}
+
+.messenger_container li {
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0px 7px;
+    gap: 10px;
+    border-radius: 7px;
+}
+
+.messenger_container li:hover {
+    cursor: pointer;
+    background-color: var(--fds-black-alpha-10);
+}
+
+.messenger_see_all {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--fds-blue-60);
+    font-size: 14px;
+}
+
+.messenger_container li>img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.messenger_container_item_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.messenger_container_item_text h5 {
+    font-size: 15px;
+    font-weight: 390;
+}
+
+.messenger_container_item_text p {
+    width: 80%;
+    color: var(--fds-black-alpha-40);
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width:450px) {
+
+    .messenger {
+        width: 96%;
+        top: 55px;
+        left: 2%;
+    }
+}
+
+
+.notifacation {
+    width: 350px;
+    height: 90vh;
+    padding: 10px;
+    position: fixed;
+    top: 55px;
+    display: flex;
+    flex-direction: column;
+    right: 10px;
+    background-color: #fff;
+    border-radius: 13px;
+    box-shadow: 0px 0px 10px var(--fds-black-alpha-10);
+    gap: 5px;
+    z-index: 999;
+}
+
+.notification_btn {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+
+.notification_btn button {
+    padding: 5px 13px;
+    border-radius: 13px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.notification_btn button:first-child {
+    color: var(--fds-blue-60);
+    background-color: var(--fds-blue-10);
+}
+
+.notifcation_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+
+}
+
+.notifcation_container_txt {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.notifcation_container_txt h1 {
+    font-size: 17px;
+    font-weight: 410;
+}
+
+.notifcation_container_txt p {
+    font-size: 14px;
+    color: var(--fds-blue-60);
+}
+
+.notification_items {
+    width: 100%;
+    height: 550px;
+    overflow: scroll;
+    background-color: transparent;
+}
+
+.notification_items::-webkit-scrollbar {
+    display: none;
+}
+
+.notification_items li {
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0px 7px;
+    gap: 10px;
+    border-radius: 7px;
+}
+
+.notification_items li:hover {
+    background-color: var(--fds-black-alpha-10);
+    cursor: pointer;
+}
+
+.notfication_item_pfp {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    position: relative;
+}
+
+.notfication_item_pfp img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.notifcation_item_icn {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    bottom: -3px;
+    right: -3px;
+    border-radius: 50%;
+    background-color: var(--fds-black-alpha-60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #fff;
+}
+
+.notification_item_txt h2 {
+    font-size: 14px;
+    font-weight: 405;
+    color: #535353;
+}
+
+.notification_item_txt h6 {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--fds-black-alpha-60);
+}
+
+.notification_item_txt p {
+    font-size: 12px;
+    color: var(--fds-black-alpha-60);
+}
+
+
+@media screen and (max-width:450px) {
+
+    .notifacation {
+        width: 96%;
+        top: 55px;
+        left: 2%;
+    }
+}
+
+
+.navbar_profile {
+    width: 350px;
+    height: 430px;
+    padding: 10px;
+    position: fixed;
+    top: 55px;
+    display: flex;
+    flex-direction: column;
+    right: 10px;
+    background-color: #fff;
+    border-radius: 13px;
+    box-shadow: 0px 0px 10px var(--fds-black-alpha-10);
+    gap: 5px;
+    z-index: 999;
+}
+
+.navbar_profile_manage {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px var(--fds-black-alpha-20);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 3px;
+}
+
+.navbar_profile_pfp {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.navbar_profile_pfp:hover {
+    background-color: var(--fds-black-alpha-05);
+    cursor: pointer;
+}
+
+.navbar_profile_pfp img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.navbar_profile_pfp p {
+    font-weight: 410;
+}
+
+.navbar_profile_manage a {
+    font-size: 14px;
+    color: var(--fds-blue-60);
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+.navbar-profile-line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--fds-black-alpha-05);
+}
+
+.navbar_profile_items {
+    width: 100%;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.navbar_profile_items a {
+    width: 100%;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.navbar_profile_item_icons {
+    width: 33px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--fds-black-alpha-10);
+    color: #000;
+    font-size: 18px;
+}
+
+.navbar_profile_items a:hover {
+    background-color: var(--fds-black-alpha-05);
+}
+
+@media screen and (max-width:450px) {
+    .navbar_profile {
+        width: 100%;
+        top: 55px;
+        left: 2%;
+    }
+}

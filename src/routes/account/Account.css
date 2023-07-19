@@ -1,0 +1,709 @@
+.account_page {
+    width: 100%;
+    height: 1700px;
+    background-color: var(--fds-comment-background);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.account_page_container {
+    width: 1100px;
+    height: auto;
+    margin: auto;
+    background-color: transparent;
+}
+
+.account_page_profile_pictures {
+    width: 100%;
+    height: auto;
+    background: rgb(15, 36, 0);
+    background: linear-gradient(180deg, rgba(15, 36, 0, 1) 0%, rgba(255, 255, 255, 1) 54%);
+}
+
+@media screen and (max-width:1400px) {
+    .account_page_container {
+        width: 80%;
+    }
+}
+
+.account_page_pfp_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.account_page-line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--fds-black-alpha-05);
+    margin: 15px 0px;
+}
+
+.account_page_thumbnails {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    position: relative;
+}
+
+.account_page_thumbnails img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.account_page_thumbnails_btn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.account_page_thumbnails_btn button {
+    padding: 10px 13px;
+    border: none;
+    border-radius: 7px;
+    background-color: #00000058;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.account_page_thumbnails_btn button>svg {
+    font-size: 18px;
+}
+
+.account_page_edit_profile {
+    width: 100%;
+    height: 180px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.acccount_page_edit_profile {
+    width: 230px;
+    height: 180px;
+    position: relative;
+    background-color: transparent;
+}
+
+.acccount_page_edit_profile img {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    position: absolute;
+    top: -30px;
+}
+
+.accout_page_edit_profile_name {
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
+    gap: 10px;
+    flex: 1;
+}
+
+.account_page_edit_profile_txt {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.account_page_edit_profile_txt p {
+    font-size: 25px;
+    font-weight: 410;
+}
+
+.account_page_edit_profile_txt a {
+    color: var(--fds-black-alpha-50);
+    font-size: 17px;
+    font-weight: 405;
+}
+
+.account_page_edit_profile_txt a:hover {
+    text-decoration: underline;
+}
+
+.account_page_edit_profile_img_container {
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0px 10px;
+}
+
+.account_page_edit_profile_img_container img {
+    width: 35px;
+    height: 35px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.account_page_editting {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    padding: 30px 0px 20px 0px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: transparent;
+    gap: 10px;
+    background-color: transparent;
+}
+
+.account_page_editting button {
+    padding: 7px 13px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    color: #000;
+    background-color: var(--fds-black-alpha-10);
+    font-size: 17px;
+    white-space: nowrap;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.account_page_editting button.active_profile_btn {
+    background-color: var(--fds-blue-60);
+    color: #fff;
+}
+
+.account_page_edditing_both_btn {
+    display: flex;
+    gap: 5px;
+}
+
+@media screen and (max-width:850px) {}
+
+@media screen and (max-width:1160px) {
+    .account_page_edit_profile {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .account_page_editting,
+    .accout_page_edit_profile_name {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .account_page_edit_profile_img_container {
+        justify-content: center;
+    }
+
+    .account_page_edit_profile_txt {
+        align-items: center;
+    }
+
+    .account_page_editting {
+        padding: 10px 20px;
+    }
+
+
+    .account_page_editting button {
+        padding: 10px 15px;
+    }
+
+    .account_page_container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    .account_page_editting {
+        flex-direction: column;
+    }
+
+    .account_page_editting_last_child {
+        width: 100%;
+    }
+
+    .account_page_editting_last_child button {
+        width: 100%;
+    }
+
+}
+
+.account_page_navbar {
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    top: 55px;
+    right: 0;
+    margin: auto;
+    transition: .5s;
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+}
+
+.account_page_sticky {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    z-index: 10;
+    transition: .5s;
+    padding: 3px 10px;
+}
+
+.account_profile_navbar_container {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    gap: 5px;
+    background-color: transparent;
+}
+
+.account_page_navbar a {
+    height: 100%;
+    padding: 0px 10px;
+    background-color: transparent;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.account_page_navbar a:hover {
+    background-color: var(--fds-black-alpha-05);
+}
+
+.account_page_navbar_icon {
+    height: 100%;
+    width: 40px;
+    background-color: var(--fds-black-alpha-10);
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+}
+
+@media screen and (max-width:600px) {
+    .account_page_navbar a {
+        font-size: 12px;
+    }
+
+    .account_page_thumbnails {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .account_page_navbar a {
+        font-size: 10px;
+    }
+
+    .account_page_navbar a:nth-child(6) {
+        display: none;
+    }
+
+    .account_page_navbar a:nth-child(5) {
+        display: none;
+    }
+
+    .account_page_navbar a:nth-child(4) {
+        display: none;
+    }
+
+}
+
+.accounnt_page_posts_part {
+    width: 100%;
+    height: auto;
+}
+
+.account_page_posts_sticky {
+    position: fixed;
+    top: 105px;
+    right: 0px;
+}
+
+.account_page_posts_style {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.account_page_picture_posts {
+    width: 39%;
+    height: 650px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+}
+
+.account_page_picture_posts::-webkit-scrollbar {
+    display: none;
+}
+
+.account_page_posts_container {
+    width: 60%;
+    height: 650px;
+    background-color: transparent;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.account_page_picture_posts_intro {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding: 13px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px var(--fds-black-alpha-10);
+}
+
+.account_page_picture_posts_intro button {
+    padding: 7px 0px;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 405;
+    cursor: pointer;
+    background-color: var(--fds-black-alpha-05);
+}
+
+.account_page_picture_posts_intro h1 {
+    font-size: 23px;
+}
+
+.account_page_picture_posts_intro button:hover {
+    background-color: var(--fds-black-alpha-10);
+}
+
+.account_page_picture_posts_photos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 13px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px var(--fds-black-alpha-10);
+    background-color: #fff;
+}
+
+.account_page_picture_posts_photos_txt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.account_page_picture_posts_photos_txt h1 {
+    font-size: 20px;
+}
+
+.account_page_picture_posts_photos_txt a {
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    color: var(--fds-blue-60);
+}
+
+.account_page_picture_posts_photos_txt a:hover {
+    background-color: var(--fds-black-alpha-05);
+}
+
+.account_page_picture_posts_photos_container {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 13;
+}
+
+.account_page_picture_posts_photos_container img {
+    width: 32%;
+    cursor: pointer;
+}
+
+
+.account_page_picture_posts_photos_container img:first-child {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.account_page_picture_posts_photos_container img:last-child {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.account_page_picture_posts_friends {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 13px 30px 13px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px var(--fds-black-alpha-10);
+    background-color: #fff;
+}
+
+.account_page_picture_friends_photos_container {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 13;
+}
+
+.account_page_picture_friends_box {
+    width: 32%;
+    padding: 5px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.account_page_picture_friends_box img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.account_page_picture_friends_box a {
+    font-size: 11px;
+}
+
+.account_page_picture_friends_box a:hover {
+    text-decoration: underline;
+}
+
+.account_page_picture_posts_friends p {
+    color: var(--fds-black-alpha-50);
+    padding: 0px 0px 10px 0px;
+}
+
+.account_page_picture_posts_txt {
+    width: 100%;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+
+.account_page_picture_posts_txt_text {
+    width: 100%;
+    font-size: 14px;
+    color: var(--fds-black-alpha-40);
+}
+
+.account_page_picture_posts_txt_text a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.account_profile_picture_posts_comment {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.account_profile_picture_comment_pfp {
+    width: 35px;
+    height: 35px;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.account_profile_picture_comment_pfp img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.account_profile_picture_comment_pfp_icon {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: var(--fds-black-alpha-40);
+    border-radius: 50%;
+}
+
+.account_profile_picture_comment_section {
+    flex: 1;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    background-color: var(--fds-black-alpha-10);
+    padding: 3px;
+    border-radius: 13px;
+    gap: 5px;
+}
+
+.account_profile_picture_comment_section input {
+    height: 30px;
+    flex: 1;
+    border: none;
+    border-radius: 13px;
+    text-indent: 10px;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+}
+
+.account_profile_picture_comment_section input::placeholder {
+    font-size: 15px;
+}
+
+.account_profile_picture_comment_section svg {
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.account_page_posts_list {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 0px 0px 0px 10px var(--fds-black-alpha-10);
+    display: flex;
+    flex-direction: column;
+    padding: 13px 13px 5px 13px;
+    gap: 5px;
+}
+
+.account_page_posts_list_txt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+.account_page_posts_list_txt h1 {
+    font-size: 20px;
+}
+
+.account_page_posts_list_txt_icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.account_page_posts_list_txt_icons a {
+    padding: 7px 10px;
+    border-radius: 7px;
+    background-color: var(--fds-black-alpha-10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.account_page_posts_list_txt_icons a:hover {
+    background-color: var(--fds-black-alpha-20);
+}
+
+.accounnt_page_posts_list_link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    padding: 3px 0px;
+}
+
+.accounnt_page_posts_list_link a {
+    width: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    border-radius: 7px;
+    gap: 10px;
+}
+
+.accounnt_page_posts_list_link a>svg {
+    font-size: 20px;
+}
+
+.accounnt_page_posts_list_link a:hover {
+    background-color: var(--fds-black-alpha-05);
+    cursor: pointer;
+}
+
+@media screen and (max-width:850px) {
+    .account_page_posts_style {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .account_page_picture_posts {
+        width: 100%;
+        height: auto;
+    }
+
+    .account_page_posts_container {
+        width: 100%;
+        height: auto;
+    }
+
+    .account_page {
+        width: 100%;
+        height: auto;
+        background-color: var(--fds-comment-background);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+@media screen and (max-width:350px) {
+    .account_profile_picture_comment_section {
+        width: 80%;
+    }
+
+    .account_page_thumbnails {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 13px;
+        position: relative;
+    }
+}

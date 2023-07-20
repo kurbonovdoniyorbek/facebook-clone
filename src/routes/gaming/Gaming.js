@@ -17,6 +17,10 @@ import { BiSolidBellRing } from 'react-icons/bi'
 import { BsTag } from 'react-icons/bs'
 import { CgGames } from 'react-icons/cg'
 import { FaGamepad } from 'react-icons/fa'
+import game_picture from '../../assets/post-pictures/game-picture.jpeg'
+import game_pfp from '../../assets/post-pictures/game-pfp.jpeg'
+import game_gif from '../../assets/post-pictures/6a6a5544-de7a-45b1-8e5c-5baf198debf4_rw_1200.gif'
+import game2 from '../../assets/post-pictures/idle-zoo.png'
 
 
 const GAMES = [
@@ -24,8 +28,8 @@ const GAMES = [
         _id: 1,
         game_name: "The Puzzle",
         image: {
-            game_banner: "https://scontent.ftas2-2.fna.fbcdn.net/m1/v/t6/An_IGEBS3iqFVdIQfFiotp9unfectCeO8WMeMxtwNHTU-epD1GWOzCbiBLr1uVTQkqCZ7_EKb-v0Jr61m5pPfHvIYNBqSYs933tOMl1Ciwskfy3GTxMvfzBuJQhSyskzL7Fs?ccb=10-5&oh=00_AfCflHK4awXJ87NcT2cTRURMTIfPg2cLGw8JrfhmE0uENw&oe=64DB870B&_nc_sid=73a32d",
-            game_icon: "https://scontent.ftas2-2.fna.fbcdn.net/v/t39.2081-6/341075998_1021651982794197_3315508111546781127_n.jpg?stp=c0.0.193.193a_dst-jpg_p192x192&_nc_cat=1&ccb=1-7&_nc_sid=b29aad&_nc_ohc=8B0YyNNkgMMAX-y1-24&_nc_ht=scontent.ftas2-2.fna&oh=00_AfC_NTZkoKpPqacSpPWA_Y3Rmdiddd7pl9BebPnHJ6-Hrw&oe=64B9883C"
+            game_banner: game_picture,
+            game_icon: game_pfp
         },
         date_text: "Ends in 15 Days",
         text: "Who is the King of the Puzzles ?",
@@ -35,8 +39,8 @@ const GAMES = [
         _id: 2,
         game_name: "The Puzzle",
         image: {
-            game_banner: "https://scontent.ftas2-2.fna.fbcdn.net/m1/v/t6/An_IGEBS3iqFVdIQfFiotp9unfectCeO8WMeMxtwNHTU-epD1GWOzCbiBLr1uVTQkqCZ7_EKb-v0Jr61m5pPfHvIYNBqSYs933tOMl1Ciwskfy3GTxMvfzBuJQhSyskzL7Fs?ccb=10-5&oh=00_AfCflHK4awXJ87NcT2cTRURMTIfPg2cLGw8JrfhmE0uENw&oe=64DB870B&_nc_sid=73a32d",
-            game_icon: "https://scontent.ftas2-2.fna.fbcdn.net/v/t39.2081-6/341075998_1021651982794197_3315508111546781127_n.jpg?stp=c0.0.193.193a_dst-jpg_p192x192&_nc_cat=1&ccb=1-7&_nc_sid=b29aad&_nc_ohc=8B0YyNNkgMMAX-y1-24&_nc_ht=scontent.ftas2-2.fna&oh=00_AfC_NTZkoKpPqacSpPWA_Y3Rmdiddd7pl9BebPnHJ6-Hrw&oe=64B9883C"
+            game_banner: game_picture,
+            game_icon: game_pfp
         },
         date_text: "Ends in 15 Days",
         text: "Who is the King of the Puzzles ?",
@@ -46,8 +50,8 @@ const GAMES = [
         _id: 3,
         game_name: "The Puzzle",
         image: {
-            game_banner: "https://scontent.ftas2-2.fna.fbcdn.net/m1/v/t6/An_IGEBS3iqFVdIQfFiotp9unfectCeO8WMeMxtwNHTU-epD1GWOzCbiBLr1uVTQkqCZ7_EKb-v0Jr61m5pPfHvIYNBqSYs933tOMl1Ciwskfy3GTxMvfzBuJQhSyskzL7Fs?ccb=10-5&oh=00_AfCflHK4awXJ87NcT2cTRURMTIfPg2cLGw8JrfhmE0uENw&oe=64DB870B&_nc_sid=73a32d",
-            game_icon: "https://scontent.ftas2-2.fna.fbcdn.net/v/t39.2081-6/341075998_1021651982794197_3315508111546781127_n.jpg?stp=c0.0.193.193a_dst-jpg_p192x192&_nc_cat=1&ccb=1-7&_nc_sid=b29aad&_nc_ohc=8B0YyNNkgMMAX-y1-24&_nc_ht=scontent.ftas2-2.fna&oh=00_AfC_NTZkoKpPqacSpPWA_Y3Rmdiddd7pl9BebPnHJ6-Hrw&oe=64B9883C"
+            game_banner: game_picture,
+            game_icon: game_pfp
         },
         date_text: "Ends in 15 Days",
         text: "Who is the King of the Puzzles ?",
@@ -57,8 +61,8 @@ const GAMES = [
         _id: 4,
         game_name: "The Puzzle",
         image: {
-            game_banner: "https://scontent.ftas2-2.fna.fbcdn.net/m1/v/t6/An_IGEBS3iqFVdIQfFiotp9unfectCeO8WMeMxtwNHTU-epD1GWOzCbiBLr1uVTQkqCZ7_EKb-v0Jr61m5pPfHvIYNBqSYs933tOMl1Ciwskfy3GTxMvfzBuJQhSyskzL7Fs?ccb=10-5&oh=00_AfCflHK4awXJ87NcT2cTRURMTIfPg2cLGw8JrfhmE0uENw&oe=64DB870B&_nc_sid=73a32d",
-            game_icon: "https://scontent.ftas2-2.fna.fbcdn.net/v/t39.2081-6/341075998_1021651982794197_3315508111546781127_n.jpg?stp=c0.0.193.193a_dst-jpg_p192x192&_nc_cat=1&ccb=1-7&_nc_sid=b29aad&_nc_ohc=8B0YyNNkgMMAX-y1-24&_nc_ht=scontent.ftas2-2.fna&oh=00_AfC_NTZkoKpPqacSpPWA_Y3Rmdiddd7pl9BebPnHJ6-Hrw&oe=64B9883C"
+            game_banner: game_picture,
+            game_icon: game_pfp
         },
         date_text: "Ends in 15 Days",
         text: "Who is the King of the Puzzles ?",
@@ -68,8 +72,8 @@ const GAMES = [
         _id: 5,
         game_name: "The Puzzle",
         image: {
-            game_banner: "https://scontent.ftas2-2.fna.fbcdn.net/m1/v/t6/An_IGEBS3iqFVdIQfFiotp9unfectCeO8WMeMxtwNHTU-epD1GWOzCbiBLr1uVTQkqCZ7_EKb-v0Jr61m5pPfHvIYNBqSYs933tOMl1Ciwskfy3GTxMvfzBuJQhSyskzL7Fs?ccb=10-5&oh=00_AfCflHK4awXJ87NcT2cTRURMTIfPg2cLGw8JrfhmE0uENw&oe=64DB870B&_nc_sid=73a32d",
-            game_icon: "https://scontent.ftas2-2.fna.fbcdn.net/v/t39.2081-6/341075998_1021651982794197_3315508111546781127_n.jpg?stp=c0.0.193.193a_dst-jpg_p192x192&_nc_cat=1&ccb=1-7&_nc_sid=b29aad&_nc_ohc=8B0YyNNkgMMAX-y1-24&_nc_ht=scontent.ftas2-2.fna&oh=00_AfC_NTZkoKpPqacSpPWA_Y3Rmdiddd7pl9BebPnHJ6-Hrw&oe=64B9883C"
+            game_banner: game_picture,
+            game_icon: game_pfp
         },
         date_text: "Ends in 15 Days",
         text: "Who is the King of the Puzzles ?",
@@ -78,8 +82,8 @@ const GAMES = [
         _id: 6,
         game_name: "The Puzzle",
         image: {
-            game_banner: "https://scontent.ftas2-2.fna.fbcdn.net/m1/v/t6/An_IGEBS3iqFVdIQfFiotp9unfectCeO8WMeMxtwNHTU-epD1GWOzCbiBLr1uVTQkqCZ7_EKb-v0Jr61m5pPfHvIYNBqSYs933tOMl1Ciwskfy3GTxMvfzBuJQhSyskzL7Fs?ccb=10-5&oh=00_AfCflHK4awXJ87NcT2cTRURMTIfPg2cLGw8JrfhmE0uENw&oe=64DB870B&_nc_sid=73a32d",
-            game_icon: "https://scontent.ftas2-2.fna.fbcdn.net/v/t39.2081-6/341075998_1021651982794197_3315508111546781127_n.jpg?stp=c0.0.193.193a_dst-jpg_p192x192&_nc_cat=1&ccb=1-7&_nc_sid=b29aad&_nc_ohc=8B0YyNNkgMMAX-y1-24&_nc_ht=scontent.ftas2-2.fna&oh=00_AfC_NTZkoKpPqacSpPWA_Y3Rmdiddd7pl9BebPnHJ6-Hrw&oe=64B9883C"
+            game_banner: game_picture,
+            game_icon: game_pfp
         },
         date_text: "Ends in 15 Days",
         text: "Who is the King of the Puzzles ?",
@@ -89,8 +93,8 @@ const GAMES = [
         _id: 7,
         game_name: "The Puzzle",
         image: {
-            game_banner: "https://scontent.ftas2-2.fna.fbcdn.net/m1/v/t6/An_IGEBS3iqFVdIQfFiotp9unfectCeO8WMeMxtwNHTU-epD1GWOzCbiBLr1uVTQkqCZ7_EKb-v0Jr61m5pPfHvIYNBqSYs933tOMl1Ciwskfy3GTxMvfzBuJQhSyskzL7Fs?ccb=10-5&oh=00_AfCflHK4awXJ87NcT2cTRURMTIfPg2cLGw8JrfhmE0uENw&oe=64DB870B&_nc_sid=73a32d",
-            game_icon: "https://scontent.ftas2-2.fna.fbcdn.net/v/t39.2081-6/341075998_1021651982794197_3315508111546781127_n.jpg?stp=c0.0.193.193a_dst-jpg_p192x192&_nc_cat=1&ccb=1-7&_nc_sid=b29aad&_nc_ohc=8B0YyNNkgMMAX-y1-24&_nc_ht=scontent.ftas2-2.fna&oh=00_AfC_NTZkoKpPqacSpPWA_Y3Rmdiddd7pl9BebPnHJ6-Hrw&oe=64B9883C"
+            game_banner: game_picture,
+            game_icon: game_pfp
         },
         date_text: "Ends in 15 Days",
         text: "Who is the King of the Puzzles ?",
@@ -103,56 +107,56 @@ const RECOMMENDATION = [
         _id: 1,
         name: "Idle Zoo: Safari Rescue",
         category: "Builder",
-        url: "https://scontent.ftas2-2.fna.fbcdn.net/v/t39.2081-6/193763751_1303679250029321_9021379878087503737_n.jpg?stp=dst-jpg_p600x313&_nc_cat=105&ccb=1-7&_nc_sid=e26652&_nc_ohc=tZ3v38r0yP8AX9_m8zp&_nc_ht=scontent.ftas2-2.fna&oh=00_AfDs1cGiR10W-MNNNArOp0oi_AC5oa0jgdpushDigHBHTA&oe=64B8397A",
+        url: game2,
         isNew: true
     },
     {
         _id: 2,
         name: "Idle Zoo: Safari Rescue",
         category: "Builder",
-        url: "https://scontent.ftas2-2.fna.fbcdn.net/v/t39.2081-6/193763751_1303679250029321_9021379878087503737_n.jpg?stp=dst-jpg_p600x313&_nc_cat=105&ccb=1-7&_nc_sid=e26652&_nc_ohc=tZ3v38r0yP8AX9_m8zp&_nc_ht=scontent.ftas2-2.fna&oh=00_AfDs1cGiR10W-MNNNArOp0oi_AC5oa0jgdpushDigHBHTA&oe=64B8397A",
+        url: game2,
         isNew: true
     },
     {
         _id: 3,
         name: "Idle Zoo: Safari Rescue",
         category: "Builder",
-        url: "https://scontent.ftas2-2.fna.fbcdn.net/v/t39.2081-6/193763751_1303679250029321_9021379878087503737_n.jpg?stp=dst-jpg_p600x313&_nc_cat=105&ccb=1-7&_nc_sid=e26652&_nc_ohc=tZ3v38r0yP8AX9_m8zp&_nc_ht=scontent.ftas2-2.fna&oh=00_AfDs1cGiR10W-MNNNArOp0oi_AC5oa0jgdpushDigHBHTA&oe=64B8397A",
+        url: game2,
         isNew: true
     },
     {
         _id: 4,
         name: "Idle Zoo: Safari Rescue",
         category: "Builder",
-        url: "https://scontent.ftas2-2.fna.fbcdn.net/v/t39.2081-6/193763751_1303679250029321_9021379878087503737_n.jpg?stp=dst-jpg_p600x313&_nc_cat=105&ccb=1-7&_nc_sid=e26652&_nc_ohc=tZ3v38r0yP8AX9_m8zp&_nc_ht=scontent.ftas2-2.fna&oh=00_AfDs1cGiR10W-MNNNArOp0oi_AC5oa0jgdpushDigHBHTA&oe=64B8397A",
+        url: game2,
         isNew: true
     },
     {
         _id: 5,
         name: "Idle Zoo: Safari Rescue",
         category: "Builder",
-        url: "https://scontent.ftas2-2.fna.fbcdn.net/v/t39.2081-6/193763751_1303679250029321_9021379878087503737_n.jpg?stp=dst-jpg_p600x313&_nc_cat=105&ccb=1-7&_nc_sid=e26652&_nc_ohc=tZ3v38r0yP8AX9_m8zp&_nc_ht=scontent.ftas2-2.fna&oh=00_AfDs1cGiR10W-MNNNArOp0oi_AC5oa0jgdpushDigHBHTA&oe=64B8397A",
+        url: game2,
         isNew: true
     },
     {
         _id: 6,
         name: "Idle Zoo: Safari Rescue",
         category: "Builder",
-        url: "https://scontent.ftas2-2.fna.fbcdn.net/v/t39.2081-6/193763751_1303679250029321_9021379878087503737_n.jpg?stp=dst-jpg_p600x313&_nc_cat=105&ccb=1-7&_nc_sid=e26652&_nc_ohc=tZ3v38r0yP8AX9_m8zp&_nc_ht=scontent.ftas2-2.fna&oh=00_AfDs1cGiR10W-MNNNArOp0oi_AC5oa0jgdpushDigHBHTA&oe=64B8397A",
+        url: game2,
         isNew: true
     },
     {
         _id: 7,
         name: "Idle Zoo: Safari Rescue",
         category: "Builder",
-        url: "https://scontent.ftas2-2.fna.fbcdn.net/v/t39.2081-6/193763751_1303679250029321_9021379878087503737_n.jpg?stp=dst-jpg_p600x313&_nc_cat=105&ccb=1-7&_nc_sid=e26652&_nc_ohc=tZ3v38r0yP8AX9_m8zp&_nc_ht=scontent.ftas2-2.fna&oh=00_AfDs1cGiR10W-MNNNArOp0oi_AC5oa0jgdpushDigHBHTA&oe=64B8397A",
+        url: game2,
         isNew: true
     },
     {
         _id: 8,
         name: "Idle Zoo: Safari Rescue",
         category: "Builder",
-        url: "https://scontent.ftas2-2.fna.fbcdn.net/v/t39.2081-6/193763751_1303679250029321_9021379878087503737_n.jpg?stp=dst-jpg_p600x313&_nc_cat=105&ccb=1-7&_nc_sid=e26652&_nc_ohc=tZ3v38r0yP8AX9_m8zp&_nc_ht=scontent.ftas2-2.fna&oh=00_AfDs1cGiR10W-MNNNArOp0oi_AC5oa0jgdpushDigHBHTA&oe=64B8397A",
+        url: game2,
         isNew: true
     }
 ]
@@ -400,7 +404,7 @@ const Gaming = () => {
                         <img src="https://cdn.myportfolio.com/0785202b6c24e160474e0f012553047a/6a6a5544-de7a-45b1-8e5c-5baf198debf4_rw_1200.gif?h=5d700bd8faa782468788a6f7dd44a0a3" alt="" />
                         <div className="gaming_container_video_banner_container">
                             <div className="gaming_container_video_banner_txt">
-                                <img src="https://scontent.ftas2-2.fna.fbcdn.net/v/t39.2081-6/277001624_503651411421729_8954590042226593511_n.jpg?stp=c0.0.193.193a_dst-jpg_p192x192&_nc_cat=1&ccb=1-7&_nc_sid=b29aad&_nc_ohc=VG2SlE2Sh2kAX-2vYeR&_nc_ht=scontent.ftas2-2.fna&oh=00_AfCxJe0lhpcM-LA9KOgLjz95asEZlVEd62n4AEhF_KOaKQ&oe=64B8A3D2" alt="" />
+                                <img src={game_gif} alt="" />
                                 <p>
                                     CLASH OF KINGS
                                     <br />

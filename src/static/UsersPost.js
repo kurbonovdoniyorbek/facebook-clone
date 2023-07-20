@@ -1,8 +1,12 @@
+import post_picture from '../assets/post-pictures/post-1.jpeg'
+import post_pfp from '../assets/post-pictures/post-pfp.jpeg'
+
+
 const POSTS = [
     {
         _id: 1,
         username: "Ig Score Sport",
-        user_img: "https://scontent.ftas2-2.fna.fbcdn.net/v/t39.30808-6/332759111_6300986009914307_3889032245767120214_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=5mWUEt_7-_wAX8TIABU&_nc_ht=scontent.ftas2-2.fna&oh=00_AfAs6bzEaaYFG-mpSwWNSQz4fcIcBl0O86CKcX4z-AKDrA&oe=64B36702",
+        user_img: post_pfp,
         post_data: "6d",
         post_desc: `Saudi Pro League done deals:
                 ✅ Jota to Al Ittihad
@@ -10,7 +14,7 @@ const POSTS = [
                 ✅ Steven Gerrard to Ettifaq Club
                 ✅ Roberto Firmino to Al Ahli
                 This is just the beginning..🤯`,
-        post_img: "https://scontent.ftas2-2.fna.fbcdn.net/v/t39.30808-6/357419260_202629352764309_4108506728886813608_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=QCZaMJXnbecAX_LhHa1&_nc_ht=scontent.ftas2-2.fna&oh=00_AfBy-MgK825s3Q6p9DaPCB_yvFhsbckzjyG0BrdXP6-54Q&oe=64B3623D",
+        post_img: post_picture,
         comments: [
             "doniyor",
             "doniyor",
@@ -92,7 +96,7 @@ const POSTS = [
     {
         _id: 2,
         username: "Ig Score Sport",
-        user_img: "https://scontent.ftas2-2.fna.fbcdn.net/v/t39.30808-6/332759111_6300986009914307_3889032245767120214_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=5mWUEt_7-_wAX8TIABU&_nc_ht=scontent.ftas2-2.fna&oh=00_AfAs6bzEaaYFG-mpSwWNSQz4fcIcBl0O86CKcX4z-AKDrA&oe=64B36702",
+        user_img: post_pfp,
         post_data: "6d",
         post_desc: `Saudi Pro League done deals:
                 ✅ Jota to Al Ittihad
@@ -100,7 +104,7 @@ const POSTS = [
                 ✅ Steven Gerrard to Ettifaq Club
                 ✅ Roberto Firmino to Al Ahli
                 This is just the beginning..🤯`,
-        post_img: "https://scontent.ftas2-2.fna.fbcdn.net/v/t39.30808-6/357419260_202629352764309_4108506728886813608_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=QCZaMJXnbecAX_LhHa1&_nc_ht=scontent.ftas2-2.fna&oh=00_AfBy-MgK825s3Q6p9DaPCB_yvFhsbckzjyG0BrdXP6-54Q&oe=64B3623D",
+        post_img: post_picture,
         comments: [
             "doniyor",
             "doniyor",

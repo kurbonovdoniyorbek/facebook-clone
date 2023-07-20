@@ -14,6 +14,7 @@ import live_video from '../../assets/main/live_video.png'
 import photo_video from '../../assets/main/photo_video.png'
 import feeling from '../../assets/main/feeling.png'
 import deafult_pfp from '../../assets/main/default_profile_pfp.png'
+import profile_picture from '../../assets/profile_picture.jpeg'
 import "./Main.css"
 
 const Main = () => {
@@ -27,7 +28,7 @@ const Main = () => {
                     <li className='main_page_menu_item'
                     >
                         <div className="main_page_menu_item_svg">
-                            <img src="https://scontent.ftas2-2.fna.fbcdn.net/v/t39.30808-1/297874771_191457966651292_2308375852179335600_n.jpg?stp=cp0_dst-jpg_p80x80&_nc_cat=105&ccb=1-7&_nc_sid=7206a8&_nc_ohc=EP8KQUEjxOkAX8zMqJ6&_nc_ht=scontent.ftas2-2.fna&oh=00_AfBcFAZM7iVhJ4zV3BzLgMRp4QYEsgFcmrrCCmx5jG6mKw&oe=64B29D58" alt="" />
+                            <img src={profile_picture} alt="" />
                         </div>
                         <p> Doniyorbek Kurbonov</p>
                     </li>
@@ -82,7 +83,7 @@ const Main = () => {
                     <div className="main_page_posts_upload">
                         <div className="main_page_posts_upload_up_part">
                             <div className="main_page_posts_upload_up_part_pfp">
-                                <img src="https://scontent.ftas2-2.fna.fbcdn.net/v/t39.30808-1/297874771_191457966651292_2308375852179335600_n.jpg?stp=cp0_dst-jpg_p80x80&_nc_cat=105&ccb=1-7&_nc_sid=7206a8&_nc_ohc=EP8KQUEjxOkAX8zMqJ6&_nc_ht=scontent.ftas2-2.fna&oh=00_AfBcFAZM7iVhJ4zV3BzLgMRp4QYEsgFcmrrCCmx5jG6mKw&oe=64B29D58" alt="" />
+                                <img src={profile_picture} alt="" />
                             </div>
                             <div className="main_page_post_upload_up_part_text">
                                 What's on your mind , Doniyorbek ?

@@ -13,6 +13,7 @@ import { BiEdit, BiMoon } from 'react-icons/bi'
 import { IoVideocam } from 'react-icons/io5'
 import { ImEnlarge } from 'react-icons/im'
 import { BsThreeDots } from 'react-icons/bs'
+import profile_picture from '../../assets/profile_picture.jpeg'
 import Menu from '../menu/Menu'
 
 const Navbar = () => {
@@ -150,7 +151,7 @@ const Navbar = () => {
                             setProfileToggle("4")
                             setProfileActive(p => !p)
                         }}>
-                        <img src="https://scontent.ftas2-2.fna.fbcdn.net/v/t39.30808-1/297874771_191457966651292_2308375852179335600_n.jpg?stp=cp0_dst-jpg_p80x80&_nc_cat=105&ccb=1-7&_nc_sid=7206a8&_nc_ohc=EP8KQUEjxOkAX8zMqJ6&_nc_ht=scontent.ftas2-2.fna&oh=00_AfBcFAZM7iVhJ4zV3BzLgMRp4QYEsgFcmrrCCmx5jG6mKw&oe=64B29D58" alt="" />
+                        <img src={profile_picture} alt="" />
                     </li>
                 </ul>
             </div>
@@ -343,7 +344,7 @@ export const Profile = ({ profileActive, setProfileActive }) => {
                 profileActive && <div className="navbar_profile">
                     <NavLink className="navbar_profile_manage" to="profile">
                         <div className="navbar_profile_pfp">
-                            <img src="https://scontent.ftas2-2.fna.fbcdn.net/v/t39.30808-1/297874771_191457966651292_2308375852179335600_n.jpg?stp=cp0_dst-jpg_p80x80&_nc_cat=105&ccb=1-7&_nc_sid=7206a8&_nc_ohc=EP8KQUEjxOkAX8zMqJ6&_nc_ht=scontent.ftas2-2.fna&oh=00_AfBcFAZM7iVhJ4zV3BzLgMRp4QYEsgFcmrrCCmx5jG6mKw&oe=64B29D58" alt="img-1" />
+                            <img src={profile_picture} alt="img-1" />
                             <p>Doniyorbek Kurbonov</p>
                         </div>
                         <div className="navbar-profile-line"></div>

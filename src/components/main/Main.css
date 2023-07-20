@@ -859,6 +859,18 @@
     }
 
     .main_page_post_upload_up_part_text {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .main_page_post_upload_up_part_text {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .main_page_post_upload_up_part_text {
         font-size: 11px;
     }
 }

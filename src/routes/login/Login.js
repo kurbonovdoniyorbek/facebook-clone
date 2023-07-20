@@ -2,24 +2,32 @@ import React, { useState } from 'react'
 import './Login.css'
 import { NavLink, useNavigate } from 'react-router-dom'
 import { RxCross2 } from 'react-icons/rx'
+import { useDispatch } from 'react-redux'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 const Login = () => {
     const [createPageActive, setCreatePageActive] = useState(false)
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const dispatch = useDispatch()
     const navigate = useNavigate()
 
     const handleSubmit = (event) => {
         event.preventDefault()
         if (email === "example@email.com" && password === "12345678") {
-            localStorage.setItem("auth", true)
+            dispatch({ type: "LOG_IN", payload: true })
+            toast.success("Succesfully log in !!")
             navigate("/")
         }
         else {
-            localStorage.setItem("auth", false)
+            toast.error("Username or Password is incorrect")
         }
     }
+
+
     return (
         <div className='login_page'>
             <div className="login_page_texts">
@@ -117,6 +125,7 @@ export const CreatePage = ({ setCreatePageActive, createPageActive }) => {
                     </form>
                 </div>
             }
+            <ToastContainer />
         </div>
     )
 }

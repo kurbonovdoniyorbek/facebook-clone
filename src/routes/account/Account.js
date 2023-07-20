@@ -16,6 +16,10 @@ import live_video from '../../assets/main/live_video.png'
 import photo_video from '../../assets/main/photo_video.png'
 import feeling from '../../assets/main/feeling.png'
 import MyPosts from '../../static/MyPosts'
+import profile_pfp from '../../assets/profile_picture.jpeg'
+import thumbnail from '../../assets/thumbnail.jpeg'
+import post1 from '../../assets/post-1.jpeg'
+import post2 from '../../assets/post-2.jpeg'
 import './Account.css'
 
 const Account = () => {
@@ -71,7 +75,7 @@ const Account = () => {
                 <div className="account_page_container">
                     <div className="account_page_pfp_container">
                         <div className="account_page_thumbnails">
-                            <img src="https://scontent.ftas2-2.fna.fbcdn.net/v/t39.30808-6/298256519_191458043317951_376422663967301686_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=e3f864&_nc_ohc=9tLqVlejf8cAX-srMMl&_nc_ht=scontent.ftas2-2.fna&oh=00_AfBscOJZjXx1LFlaNv9uAOKjkSWCnXnRsi63CpdEKrEuWQ&oe=64BD264D" alt="img-1" />
+                            <img src={thumbnail} alt="img-1" />
                             <div className="account_page_thumbnails_btn">
                                 <button><RiChatSmile3Line />Create with avatar</button>
                                 <button><BsFillCameraFill />Edit cover photo</button>
@@ -79,7 +83,7 @@ const Account = () => {
                         </div>
                         <div className="account_page_edit_profile">
                             <div className="acccount_page_edit_profile">
-                                <img src="https://scontent.ftas2-2.fna.fbcdn.net/v/t39.30808-1/297874771_191457966651292_2308375852179335600_n.jpg?stp=dst-jpg_p480x480&_nc_cat=105&ccb=1-7&_nc_sid=7206a8&_nc_ohc=_rcyI3hFFjUAX84vPJG&_nc_ht=scontent.ftas2-2.fna&oh=00_AfAKXrY5vTbt7i-FgOYy3dH0W0nkqOq86ss4fPaa87YVFA&oe=64BC8098" alt="" />
+                                <img src={profile_pfp} alt="" />
                             </div>
                             <div className="accout_page_edit_profile_name">
                                 <div className="account_page_edit_profile_txt">
@@ -89,8 +93,8 @@ const Account = () => {
                                     </NavLink>
                                 </div>
                                 <div className="account_page_edit_profile_img_container">
-                                    <img src={default_pfp} alt="" />
-                                    <img src={default_pfp} alt="" />
+                                    <img src={post1} alt="" />
+                                    <img src={post2} alt="" />
                                 </div>
                             </div>
                             <div className="account_page_editting">
@@ -174,9 +178,9 @@ const Account = () => {
                                     </NavLink>
                                 </div>
                                 <div className="account_page_picture_posts_photos_container">
-                                    <img src="https://scontent.ftas2-1.fna.fbcdn.net/v/t39.30808-6/277807216_162191339577955_2463389905248426064_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=174925&_nc_ohc=1zSnfQPKviEAX9dXIGm&_nc_ht=scontent.ftas2-1.fna&oh=00_AfB56E54Tc2ly7zUSafolNtwmkYSN7ppYZNbglX2sNFbHQ&oe=64BE1AC6" alt="" />
-                                    <img src="https://scontent.ftas1-1.fna.fbcdn.net/v/t39.30808-6/278170683_163001849496904_2278256263714684385_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=174925&_nc_ohc=UkMXFGJeBOEAX8-Z_Rq&_nc_ht=scontent.ftas1-1.fna&oh=00_AfDGLCGxXQe3msdCuH8GanD82mXKx9lGs4uerwCVmAhDyA&oe=64BD779B" alt="" />
-                                    <img src="https://scontent.ftas2-2.fna.fbcdn.net/v/t39.30808-6/297874771_191457966651292_2308375852179335600_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=_rcyI3hFFjUAX84vPJG&_nc_ht=scontent.ftas2-2.fna&oh=00_AfAX8DrWD6xO9w3GoxT1YsWOg6npTpGgStZkLP0an2G3qg&oe=64BD54D2" alt="" />
+                                    <img src={profile_pfp} alt="" />
+                                    <img src={post1} alt="" />
+                                    <img src={post2} alt="" />
                                 </div>
                             </div>
                             <div className="account_page_picture_posts_friends">
@@ -220,7 +224,7 @@ const Account = () => {
                             <div className="main_page_posts_upload">
                                 <div className="main_page_posts_upload_up_part">
                                     <div className="main_page_posts_upload_up_part_pfp">
-                                        <img src="https://scontent.ftas2-2.fna.fbcdn.net/v/t39.30808-1/297874771_191457966651292_2308375852179335600_n.jpg?stp=cp0_dst-jpg_p80x80&_nc_cat=105&ccb=1-7&_nc_sid=7206a8&_nc_ohc=EP8KQUEjxOkAX8zMqJ6&_nc_ht=scontent.ftas2-2.fna&oh=00_AfBcFAZM7iVhJ4zV3BzLgMRp4QYEsgFcmrrCCmx5jG6mKw&oe=64B29D58" alt="" />
+                                        <img src={profile_pfp} alt="" />
                                     </div>
                                     <div className="main_page_post_upload_up_part_text">
                                         What's on your mind , Doniyorbek ?

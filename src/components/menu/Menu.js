@@ -51,7 +51,11 @@ const Menu = ({ setMenuActive, menuActive, setPostActive, postActive }) => {
                                             <p>{item.header_text}</p>
                                             {
                                                 item?.data.map((i) =>
-                                                    <NavLink key={i._id}>
+                                                    <NavLink key={i._id} to={i.path}
+                                                        onClick={() => {
+                                                            setMenuActive(p => !p)
+                                                        }}
+                                                    >
                                                         <li className='menu-right_items'>
                                                             <div className="menu-right_item-pic">
                                                                 <img src={require(`../../assets/menu_icons/${i?.url_text}.png`)} alt={`${i.url_text}`} />

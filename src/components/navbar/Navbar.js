@@ -15,6 +15,7 @@ import { ImEnlarge } from 'react-icons/im'
 import { BsThreeDots } from 'react-icons/bs'
 import profile_picture from '../../assets/profile_picture.jpeg'
 import Menu from '../menu/Menu'
+import { useDispatch, useSelector } from 'react-redux'
 
 const Navbar = () => {
     const [profileToggle, setProfileToggle] = useState(""),
@@ -24,7 +25,7 @@ const Navbar = () => {
         [mesenger, setMessenger] = useState(false),
         [notifcation, setNotification] = useState(false),
         [profileActive, setProfileActive] = useState(false),
-        auth = localStorage.getItem("auth")
+        auth = useSelector(w => w.auth)
 
 
 
@@ -335,6 +336,7 @@ export const Notification = ({ setNotification, notifcation }) => {
 }
 
 export const Profile = ({ profileActive, setProfileActive }) => {
+    const dispatch = useDispatch()
     return (
         <div>
             {profileActive && <div className="menu_shadow"
@@ -342,7 +344,11 @@ export const Profile = ({ profileActive, setProfileActive }) => {
             ></div>}
             {
                 profileActive && <div className="navbar_profile">
-                    <NavLink className="navbar_profile_manage" to="profile">
+                    <NavLink className="navbar_profile_manage" to="profile"
+                        onClick={() => {
+                            setProfileActive(p => !p)
+                        }}
+                    >
                         <div className="navbar_profile_pfp">
                             <img src={profile_picture} alt="img-1" />
                             <p>Doniyorbek Kurbonov</p>
@@ -377,7 +383,12 @@ export const Profile = ({ profileActive, setProfileActive }) => {
                             </div>
                             <p>Give feedback</p>
                         </NavLink>
-                        <NavLink>
+                        <NavLink
+                            onClick={() => {
+                                dispatch({ type: "LOG_OUT", payload: false })
+                                setProfileActive(p => !p)
+                            }}
+                        >
                             <div className="navbar_profile_item_icons">
                                 <RiDoorOpenLine />
                             </div>

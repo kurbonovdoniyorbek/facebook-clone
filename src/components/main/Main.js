@@ -62,9 +62,9 @@ const Main = () => {
                     </li>
                 </ul>
                 <p className='main_page_menu_ads_text'>
-                    <span><a href="/">Privacy</a></span>  ·   <span><a href="/">Terms</a></span>  ·   <span><a href="/">Advertising</a></span>  ·   <span><a href="/">Ad Choices</a></span>
+                    <span><NavLink>Privacy</NavLink></span>  ·   <span><NavLink >Terms</NavLink></span>  ·   <span><NavLink>Advertising</NavLink></span>  ·   <span><NavLink >Ad Choices</NavLink></span>
                     <br />
-                    ·   <span><a href="/">Cookies</a></span>  ·  More · Meta © 2023
+                    ·   <span><NavLink>Cookies</NavLink></span>  ·  More · Meta © 2023
                 </p>
             </div>
             <div className="main_page_posts">

@@ -1,8 +1,10 @@
 import React from 'react'
 import { Navigate, Outlet, Routes, Route } from 'react-router-dom'
+import { useSelector } from 'react-redux';
 
 const Protector = () => {
-    const auth = localStorage.getItem("auth")
+    const auth = useSelector(w => w.auth)
+
     return auth ?
         <Outlet /> :
         <Routes>

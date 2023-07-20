@@ -14,7 +14,7 @@ const MENU_DATA = [
                 text: "Find Friends",
                 desc: "Search for friends or people you may know.",
                 url_text: "friends",
-                path: "/"
+                path: "/friends"
             },
             {
                 _id: 2,
@@ -54,21 +54,21 @@ const MENU_DATA = [
                 text: "Gaming Video",
                 desc: "Watch and connect with your favorite games and streamers.",
                 url_text: "gaming_video",
-                path: "/"
+                path: "/games"
             },
             {
                 _id: 7,
                 text: "Play Games",
                 desc: "Play your favorite games.",
                 url_text: "playing_games",
-                path: "/"
+                path: "/games"
             },
             {
                 _id: 8,
                 text: "Watch",
                 desc: "A video destination personalized to your interests and connections.",
                 url_text: "watch_video",
-                path: "/"
+                path: "/watch"
             }
         ]
     },
@@ -87,7 +87,7 @@ const MENU_DATA = [
                 text: "Marketplace",
                 desc: "Buy and sell in your community.",
                 url_text: "marketplace",
-                path: "/"
+                path: "/market"
             }
         ]
     },

@@ -37,10 +37,12 @@ const Login = () => {
                     around you on Facebook.</p>
             </div>
             <div className="login_page_box">
-                <form className="login_page_form" onSubmit={handleSubmit}>
-                    <input type="text" placeholder='Email or phone number' autoCorrect='none' value={email} onChange={e => setEmail(e.target.value)} />
-                    <input type="password" placeholder='Password' value={password} onChange={e => setPassword(e.target.value)} />
-                    <button className='login_form_login_btn' type='submit'>Log in</button>
+                <div className="login_page_form">
+                    <form action="" onSubmit={handleSubmit}>
+                        <input type="text" placeholder='Email or phone number' autoCorrect='none' value={email} onChange={e => setEmail(e.target.value)} />
+                        <input type="password" placeholder='Password' value={password} onChange={e => setPassword(e.target.value)} />
+                        <button className='login_form_login_btn' type='submit'>Log in</button>
+                    </form>
                     <NavLink>
                         Forgot password?
                     </NavLink>
@@ -50,9 +52,11 @@ const Login = () => {
                             setCreatePageActive(p => !p)
                         }}
                     >Create a new account</button>
-                </form>
+                </div>
                 <p className='login_page_box_bottom_txt'><NavLink
-
+                    onClick={() => {
+                        setCreatePageActive(p => !p)
+                    }}
                 >Create a Page</NavLink>
                     for a celebrity, brand or business.</p>
             </div>
